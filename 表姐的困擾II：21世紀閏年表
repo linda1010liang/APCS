@@ -1,0 +1,8 @@
+#表姐的困擾II：21世紀閏年表
+s=0
+for i in range(2001,2100):
+    if i%4==0 or i%100!=0 and i%400==0:
+        print(i,end=" ")
+        s=s+1
+        if s%5==0:
+            print()
