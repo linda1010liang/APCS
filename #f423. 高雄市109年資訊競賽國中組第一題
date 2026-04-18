@@ -1,0 +1,7 @@
+#f423. 高雄市109年資訊競賽國中組第一題
+n=int(input())
+s=0
+for i in range(1,n+1):
+    if i%2!=0:
+        s+=i
+print(s)
