@@ -1,0 +1,10 @@
+#表姐的困擾I：成績計算
+s=0#總分
+a=0#個數
+while 1:
+    n=int(input())
+    if n==-1:
+        break
+    s+=n
+    a+=1
+    print("%.1f"%(s/a))
