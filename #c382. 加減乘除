@@ -1,0 +1,4 @@
+#c382. 加減乘除
+b=eval
+a=b(input())
+print(int(a))
