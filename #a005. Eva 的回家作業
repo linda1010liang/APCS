@@ -1,0 +1,8 @@
+#a005. Eva 的回家作業
+n=int(input())
+for i in range(n):
+    a,b,c,d=map(int,input().split())
+    if b-a==c-b==d-c:
+        print(a,b,c,d,d+b-a)
+    else:
+        print(a,b,c,d,d*b//a)
