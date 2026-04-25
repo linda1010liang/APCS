@@ -1,0 +1,7 @@
+#a024. 最大公因數(GCD)
+a,b=map(int,input().split())#a被除數 b除數
+while a%b!=0:
+    t=b  #t是下一個被除數
+    b=a%b  #餘數變成被除數
+    a=t
+print(b)
