@@ -1,0 +1,15 @@
+#d189. 11150 - Cola
+while 1:
+    try:
+        n=int(input()) #買了n瓶
+        total=n     #共喝了幾瓶
+        empty=n #空瓶子
+        while empty>=3:
+            t=empty//3  #換的可樂
+            total+=t
+            empty= empty%3+t
+        if empty==2:
+            total+=1
+        print(total)
+    except:
+        break
