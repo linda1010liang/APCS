@@ -1,0 +1,22 @@
+#a010. 因數分解
+#(1)找到他最小的質因數
+#(2)除到他不能除為止，再找下一個質因數
+n=int(input())
+a=2#質因數
+while n!=1:
+    ac=0#幾次方
+    while n%a==0:#a為因數
+        n=n/a
+        ac+=1
+    if ac>=1:
+        if n==1:
+            if ac>1:
+                print("{}^{}".format(a,ac))
+            else:
+                print(a)
+        else:
+            if ac>1:
+                print("{}^{} * ".format(a,ac),end="")
+            else:
+                print("{} * ".format(a),end="")
+    a+=1
