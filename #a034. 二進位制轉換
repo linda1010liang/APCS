@@ -1,0 +1,16 @@
+#a034. 二進位制轉換
+#(1)把10進位的數除2，得到的餘數就是二進位的數，先把他存在串列a
+#(2)把商射為該數  重複(1)的動作，直到商為0
+while 1:
+    try:
+        n=int(input())
+        a=[]
+        while n!=0:
+            a.append(n%2)
+            n=n//2
+        a.reverse()
+        for k in a:
+            print(k,end="")
+        print()    
+    except:
+        break
