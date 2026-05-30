@@ -1,0 +1,4 @@
+#c186. 蝸牛老師的點名單
+a=list(input().split())
+for k in a:
+    print(k)
