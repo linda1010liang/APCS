@@ -1,0 +1,19 @@
+#m801. 鏡像對稱 (Mirror)
+c="AHIMOTUVWXY"#樣板字串
+a=input()#字串
+#字串沒有倒過來的函數，串列才有
+#回文就是從左往右(正向得串列)與從右往左看(倒過來的串列)都一樣
+a=list(a)#串列
+b=a.copy()#a要保留
+b.reverse()#倒過來
+ok=True
+if a==b: #有回文
+    for k in a:
+        if k not in c:
+            print("No")
+            ok=False
+            break
+    if ok:
+        print("Yes")
+else:     #沒有回文
+    print("No")
