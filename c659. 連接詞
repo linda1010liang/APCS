@@ -1,0 +1,7 @@
+#c659. 連接詞
+a=list(input().split())
+b=a[0]#連接詞
+c=a[1:]
+for i in range(len(c)-1):
+    print("{} {} ".format(c[i],b),end="")
+print(c[-1])
