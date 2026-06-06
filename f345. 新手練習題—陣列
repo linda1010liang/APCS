@@ -1,0 +1,6 @@
+#f345. 新手練習題—陣列
+n=int(input())
+p=list(map(int,input().split()))
+p.reverse()
+for k in p:
+    print(k,end=" ")
