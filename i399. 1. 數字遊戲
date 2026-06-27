@@ -1,0 +1,9 @@
+#i399. 1. 數字遊戲
+a=list(map(int,input().split()))
+a.sort(reverse=True) #由大到小排列
+if a[2]==a[0]:
+    print(3,a[0]) #眾數為3
+elif a[0]==a[1] or a[1]==a[2]: #眾數為2
+    print(2,a[0],a[2])
+else:
+    print(1,a[0],a[1],a[2])
