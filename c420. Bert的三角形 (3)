@@ -1,0 +1,10 @@
+#c420. Bert的三角形 (3)
+n=int(input())
+for i in range(1,n+1):
+    for j in range(n-i):
+        print("_",end="")
+    for j in range(i*2-1):
+        print("*",end="")
+    for j in range(n-i):
+        print("_",end="")
+    print()
