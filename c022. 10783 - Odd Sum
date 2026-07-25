@@ -1,0 +1,10 @@
+#c022. 10783 - Odd Sum
+t=int(input())
+for i in range(t):
+    s=0
+    a=int(input())
+    b=int(input())
+    for j in range(a,b+1):
+        if j%2!=0:
+            s+=j
+    print("Case {}: {}".format(i+1,s))
