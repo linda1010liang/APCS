@@ -1,0 +1,13 @@
+#f373. 週年慶 Anniversary
+#(0為天天百貨,1 為琪琪百貨)
+n=int(input())
+#天天
+a=n
+a=a-200*(n//2000)
+#棋棋
+b=n
+b=b-100*(n//1000)
+if b<a:
+    print(b,1)
+else:
+    print(a,0)
