@@ -1,0 +1,14 @@
+#e621. 1. 免費停車 (Free Parking)
+n=int(input())
+for i in range(n):
+    a,b,c=map(int,input().split())
+    ans=[]
+    for j in range(a+1,b):
+        if (j%c)!=0:
+            ans.append(j)
+    if len(ans)==0:
+        print("No free parking spaces.")        
+    else:
+        for k in ans:
+            print(k,end=" ")
+    print()
