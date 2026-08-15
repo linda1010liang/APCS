@@ -1,0 +1,27 @@
+#f707.幸運 7 (Lucky Seven)
+a=input().split()#1234567890
+i=0
+b=[]#123456789
+while (a[i]!="0"):
+    b.append(int(a[i]))
+    i+=1
+
+c=[] #可被7整除
+d=[]#不可被7整除 
+for n in b:
+    if n%7==0:
+        c.append(n)
+    else:
+        d.append(n)
+
+max=0
+for n in c:
+    if n%70>=max%70:
+        max=n
+# 543821印出%77後 最小
+if max==0:
+    max=d[0]#max=76
+    for n in d:
+        if n%77<max%77:
+            max=n
+print(max)
