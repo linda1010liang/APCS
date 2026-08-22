@@ -1,0 +1,10 @@
+#f708.蟲蟲危機 (Insect)
+m,n=map(int,input().split())#m螞蟻數量 n蚱蜢數量
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+mh=sum(a)
+nh=sum(b)
+if m>n and mh>nh:
+    print("Yes")
+else:
+    print("No")
