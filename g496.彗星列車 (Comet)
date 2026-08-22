@@ -1,0 +1,6 @@
+#g496.彗星列車 (Comet)
+s,a=map(int,input().split())
+if a%s!=0:
+    print(a//s+1)
+else:
+    print(a//s)
