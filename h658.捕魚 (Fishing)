@@ -1,0 +1,17 @@
+#h658.捕魚 (Fishing)
+import math
+x,y=map(int,input().split())  #漁夫座標
+n=int(input())
+s=10000#最小距離
+x0=0  #發生最小值時的x座標
+y0=0  #發生最小值時的y座標
+for i in range(n):
+    x1,y1=map(int,input().split()) #魚群座標
+    a=abs(x-x1) #abs=絕對值
+    b=abs(y-y1)
+    s1=math.sqrt(a*a+b*b) #開根號
+    if s1<s:
+        s=s1
+        x0=x1
+        y0=y1
+print(x0,y0)
