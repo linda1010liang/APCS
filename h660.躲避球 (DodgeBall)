@@ -1,0 +1,14 @@
+#h660.躲避球 (DodgeBall)
+x,r,v=map(int,input().split())
+n=int(input())
+for i in range(n):
+    p,s=map(int,input().split())
+    if abs(p-x)<=r: #有機會接球
+        if s<=v: #接球
+            x=p
+        else:
+            if p>=x:
+                x-=15
+            else:
+                x=x+15
+print(x)
