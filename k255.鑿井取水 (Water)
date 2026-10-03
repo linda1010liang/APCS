@@ -1,0 +1,17 @@
+#k255.鑿井取水 (Water)
+n,w=map(int,input().split())
+total=0
+no_water=False #沒水時設為True
+for i in range(1,n+1):
+    a=list(map(int,input().split())) #讀入每天用水量
+    total+=w
+    for j in range(1,a[0]+1):
+        total-=a[j]
+        if total<0:
+            print(i)
+            no_water=True
+            break
+    if no_water:
+        break
+if no_water==False:
+    print("-1")
