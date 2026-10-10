@@ -1,0 +1,18 @@
+#j180.戰備存糧 (Food)
+while 1:
+    a=list(map(int,input().split())) 
+    if a[0]==-1:
+        break
+    n=a[0]   #倉庫數
+    e=a[1]   #容量
+    f=n*e    #食物量
+    day=0    #天數
+    total_eat=0  #總共吃掉多少食物
+    while f>0:
+        day+=1
+        f-=n
+        total_eat+=n
+        x=total_eat//e  #要撤掉的倉庫
+        n-=x
+        total_eat=total_eat%e  #還剩的吃掉的食物
+    print(day)
