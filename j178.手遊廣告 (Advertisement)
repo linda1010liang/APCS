@@ -1,0 +1,10 @@
+#j178.手遊廣告 (Advertisement)
+m,a=map(int,input().split())
+t=list(map(int,input().split()))
+for i in range(m):
+    if a<=t[i]:
+        print(a)
+        break
+    a+=t[i]
+if a>t[i]:
+    print(a)
