@@ -1,0 +1,19 @@
+#b140. 熱門點播
+n=int(input())
+a=list(map(int,input().split()))
+m=[] #點播的歌曲編號
+k=[]
+for i in range(n):
+     if a[i] in m:
+         ii=m.index(a[i])
+         k[ii]+=1
+     else:
+         m.append(a[i])
+         k.append(1)
+maxm=0 #點播次數最高的歌曲編號
+maxk=0 #點播最多次的次數
+for i in range(len(m)):
+    if k[i]>maxk:
+        maxk=k[i]
+        maxm=m[i]
+print(maxm,maxk)
