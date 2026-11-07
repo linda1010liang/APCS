@@ -1,0 +1,7 @@
+#b033. 下午茶時間
+h,m=map(int,input().split())
+h=h*60+m
+if h>=14*60+20 and h<=16*60+40:
+    print("YES")
+else:
+    print("NO")
