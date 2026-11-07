@@ -1,0 +1,15 @@
+#b140. 熱門點播
+n=int(input())
+b=list(map(int,input().split()))
+a=[]  #有點播的歌曲及點播次數
+for k in b:
+    find=False
+    for j in a:
+        if j[1]==k:
+            find=True
+            j[0]+=1
+            break
+    if find==False:
+        a.append([1,k])
+a.sort(reverse=True)
+print(a[0][1],a[0][0])
